@@ -1,0 +1,21 @@
+<template>
+        <head>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <style type="text/css">
+            .container{
+                position: absolute;
+                left: 0;
+                right:0;
+                height: 100%;
+                width: 100%;
+                margin:auto;
+            }
+    
+        </style>
+        </head>
+    <div class="container">
+            <h1>${message}</h1>
+            <compose show.bind="showList == 'showGalleries'" view="./components/picturesList.html"></compose>
+            <compose show.bind="!showList" view="./components/picturesForm.html"></compose></div>
+        </template>
+        

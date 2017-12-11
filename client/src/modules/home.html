@@ -1,0 +1,40 @@
+<!-- <template>
+	<h1>${message}</h1>
+	<button click.trigger="login()">Login</button>
+</template>
+ -->
+<template>
+
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style type="text/css">
+        body{
+            margin:0;
+                        padding:0;
+                        background: url('https://ak2.picdn.net/shutterstock/videos/4189474/thumb/7.jpg') no-repeat center fixed;
+                        background-size: 100%
+        }
+            .container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                margin-left: 10px;
+            }
+
+            .header{
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container"></div>
+
+    <h1 class="header">${message}</h1>
+
+    <compose show.bind="showLogin" view="./components/login.html"></compose>
+
+    <compose show.bind="!showLogin" view="./components/register.html"></compose>
+    </div></body>
+</template>
